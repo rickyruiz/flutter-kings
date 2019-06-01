@@ -1,4 +1,6 @@
+import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/material.dart';
+import 'package:hackaton_flutter/src/pages/chat_page.dart';
 
 class HootyPage extends StatefulWidget {
   @override
@@ -6,22 +8,29 @@ class HootyPage extends StatefulWidget {
 }
 
 class _HootyPageState extends State<HootyPage> {
-  String _Nombre='';
+  String _content='';
+    final DatabaseReference _messagesRef = FirebaseDatabase.instance.reference().child('messages');
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('New Hooty'),),
+      appBar: AppBar(title: Text('New Hooty Hoot'),),
       body: Container(
         padding: EdgeInsets.symmetric(horizontal: 10.0,vertical: 20.0),
         child: Column(
           children: <Widget>[
             _crearInput(),
-            _crearInput2(),
             FlatButton(
-              onPressed: (){},
+              onPressed: (){
+                _messagesRef.child('message5').set({
+                  'content':_content,
+                  'createdBy':'Ruiz',
+                  'creationDate':'today',
+                });
+              Navigator.push(context, MaterialPageRoute(builder: (context)=> ChatPage()));
+              },
               color: Colors.blue,
-                child: Text('Add'),
+                child: Text('SEND!'),
             ),
 
           ],
@@ -38,34 +47,13 @@ class _HootyPageState extends State<HootyPage> {
           border: OutlineInputBorder(
               borderRadius: BorderRadius.circular(20.0)
           ),
-          hintText: 'Hooty',
-          labelText: 'Hooty',
+          hintText: 'Hooty hoot!',
+          labelText: 'Type your hooty hoot to get help!',
 
       ),
       onChanged: (valor){
         setState(() {
-          _Nombre = valor;
-        });
-
-      },
-    );
-  }
-
-  Widget _crearInput2() {
-    return TextField(
-      autofocus: false,
-      textCapitalization: TextCapitalization.sentences,
-      decoration: InputDecoration(
-          border: OutlineInputBorder(
-              borderRadius: BorderRadius.circular(20.0)
-          ),
-          hintText: 'Tags',
-          labelText: 'Tag',
-
-      ),
-      onChanged: (valor){
-        setState(() {
-          _Nombre = valor;
+          _content = valor;
         });
 
       },
