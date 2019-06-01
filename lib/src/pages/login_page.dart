@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hackaton_flutter/src/pages/home_page.dart';
 
 class LoginPage extends StatelessWidget {
 
@@ -9,26 +10,30 @@ class LoginPage extends StatelessWidget {
   Widget build(BuildContext context) {
 
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Loging Page'),
-      ),
-      body: Container(
-        padding: EdgeInsets.only(top: 10.0),
-        child: Column(
-          children: <Widget>[
-            Text('Hooty Hoot!',style: TextStyle(fontSize: 40.0),),
-            FlutterLogo(size: 200.0,),
-            _crearEmail(),
-            Divider(),
-            _crearPassword(),
-            Divider(),
-            FlatButton(
-              child: Text('Login'),
-              color: Colors.blue,
-              onPressed: (){},
+
+      body: SafeArea(
+        child: Container(
+          padding: EdgeInsets.only(top: 10.0),
+          child: SingleChildScrollView(
+            child: Column(
+              children: <Widget>[
+                Text('Hooty Hoot!',style: TextStyle(fontSize: 40.0),),
+                FlutterLogo(size: 200.0,),
+                _crearEmail(),
+                Divider(),
+                _crearPassword(),
+                Divider(),
+                FlatButton(
+                  child: Text('Login'),
+                  color: Colors.blue,
+                  onPressed: (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>HomePage()));
+                  },
+                ),
+                Text('register', style: TextStyle(color: Colors.blue[700],fontSize: 12.0),),
+              ],
             ),
-            Text('register', style: TextStyle(color: Colors.blue[700],fontSize: 12.0),),
-          ],
+          ),
         ),
       ),
     );
