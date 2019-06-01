@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>925001631987-11pl1233oaev66j9cv6uk6mutrlleoi1.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.925001631987-11pl1233oaev66j9cv6uk6mutrlleoi1</string>
+	<key>API_KEY</key>
+	<string>AIzaSyD9q1ANNserXtktrgSg5brEQ_vV2vZqLhQ</string>
+	<key>GCM_SENDER_ID</key>
+	<string>925001631987</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.hackatonFlutter</string>
+	<key>PROJECT_ID</key>
+	<string>hooty-hoot</string>
+	<key>STORAGE_BUCKET</key>
+	<string>hooty-hoot.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:925001631987:ios:57efab823add1c88</string>
+	<key>DATABASE_URL</key>
+	<string>https://hooty-hoot.firebaseio.com</string>
+</dict>
+</plist>
