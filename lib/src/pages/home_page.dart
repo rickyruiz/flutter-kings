@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hackaton_flutter/src/components/message_list.dart';
 import 'package:hackaton_flutter/src/pages/hooty_page.dart';
 
 class HomePage extends StatefulWidget {
@@ -17,20 +18,8 @@ class _HomePageState extends State<HomePage> {
           },
         child: Icon(Icons.add),
       ),
-      body: ListView(
-        children: <Widget>[
-          FlatButton(
-            onPressed: (){},
-            child: Card(
-              color: Colors.white10,
-              child: ListTile(
-                title: Text('Item1'),
-                subtitle: Text('sup'),
-              ),
-            ),
-          ),
-        ],
-      ),
+      body: MessageList(),
+      backgroundColor: Colors.white70,
     );
   }
 }
