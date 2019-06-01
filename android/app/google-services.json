@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "925001631987",
+    "firebase_url": "https://hooty-hoot.firebaseio.com",
+    "project_id": "hooty-hoot",
+    "storage_bucket": "hooty-hoot.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:925001631987:android:306ee7ff8f14bc1d",
+        "android_client_info": {
+          "package_name": "com.example.hackaton_flutter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "925001631987-ph69ksiq5qiui8urj174hku6v2ph9216.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYzK7LwhrFZCmDLT0QjZHoKdv0FEFBsvc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "925001631987-ph69ksiq5qiui8urj174hku6v2ph9216.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "925001631987-11pl1233oaev66j9cv6uk6mutrlleoi1.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.hackatonFlutter"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
