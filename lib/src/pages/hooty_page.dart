@@ -17,7 +17,6 @@ class _HootyPageState extends State<HootyPage> {
         child: Column(
           children: <Widget>[
             _crearInput(),
-            Divider(color: Colors.white,),
             _crearInput2(),
             FlatButton(
               onPressed: (){},
